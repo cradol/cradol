@@ -1,0 +1,21 @@
+#################################################################################
+# Reacher Parameters
+#################################################################################
+
+env_name: Reacher-v2
+lr: 0.001
+batch_size: 100
+exp_name: Reacher
+seed: 1
+alpha: 0.001
+buffer_size: 1000000
+load_model: False
+visualize: False
+option_num: 3
+save_model_every: 10000
+max_episode_steps: 50
+num_units: 10
+k: 3
+value_size: 6
+hidden_size: 6
+start_steps: 0

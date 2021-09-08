@@ -1,0 +1,21 @@
+#################################################################################
+# Moving Bandit Parameters
+#################################################################################
+
+env_name: MovementBandits-v0
+lr: 0.0003
+batch_size: 100
+exp_name: Moving_Bandits
+seed: 1
+alpha: 0.005
+buffer_size: 1000000
+load_model: False
+visualize: False
+option_num: 3
+save_model_every: 100000
+max_episode_steps: 50
+num_units: 5
+k: 3
+hidden_size: 6
+start_steps: 0
+value_size: 16

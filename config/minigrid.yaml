@@ -1,0 +1,24 @@
+#################################################################################
+# Moving Bandit Parameters
+#################################################################################
+
+env_name: MiniGrid-DoorKey-6x6-v0
+lr: 0.0005
+batch_size: 100
+exp_name: MiniGrid_Key
+seed: 1
+alpha: 0.001
+buffer_size: 1000000
+load_model: False
+visualize: False
+option_num: 3
+save_model_every: 100000
+hidden_size: 6
+num_units: 4
+k: 3
+value_size: 32
+grid_size: 6
+start_steps: 0
+# MiniGrid-DoorKey-6x6-v0
+# MiniGrid-MultiRoom-N2-S4-v0
+# MiniGrid-Empty-Random-6x6-v0
