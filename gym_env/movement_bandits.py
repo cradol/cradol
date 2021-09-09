@@ -1,8 +1,3 @@
-"""
-Classic cart-pole system implemented by Rich Sutton et al.
-Copied from https://webdocs.cs.ualberta.ca/~sutton/book/code/pole.c
-"""
-
 import logging
 import gym
 from gym import spaces
@@ -24,9 +19,9 @@ class MovementBandits(gym.Env):
         self.action_space = spaces.Discrete(5)
         self.random_data_len = 10
         if add_action_in_obs:
-            self.observation_space = spaces.Box(-10000000, 10000000, shape=(7+self.random_data_len,))
+            self.observation_space = spaces.Box(-10000000, 10000000, shape=(7 + self.random_data_len,))
         else:
-            self.observation_space = spaces.Box(-10000000, 10000000, shape=(7+self.random_data_len,))
+            self.observation_space = spaces.Box(-10000000, 10000000, shape=(7 + self.random_data_len,))
         self.add_action_in_obs = add_action_in_obs
 
         self.realgoal = 0
@@ -78,7 +73,7 @@ class MovementBandits(gym.Env):
             theta = theta * math.pi / 180.0
             x = self.radius * math.cos(theta) + self.state[0]
             y = self.radius * math.sin(theta) + self.state[1]
-            self.goals.append((x,y))
+            self.goals.append((x, y))
 
         for i in range(self.random_data_len):
             self.random_data.append(np.random.uniform())
